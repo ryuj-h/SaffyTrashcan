@@ -1,0 +1,102 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.StringTokenizer;
+
+public class BOJ17281BaseBall {
+	static int N;
+	static int info[][];
+	static boolean visited[];
+	static int made[];
+	static int rouxs[];
+	static int Solution = Integer.MIN_VALUE;
+	
+	public static void BaseBall() {
+		int Score =0;
+
+		int turn = 0;
+		for(int i =0; i < N; i++) {//이닝
+			int outcount = 0;
+			
+			while(true) {
+				int currscore = info[i][made[turn % 9]];
+				if (currscore == 0) {
+					outcount++;
+				}
+				if (outcount >= 3 )
+					break;
+			
+				for(int j = 0; j < 9; j++) {
+					if (rouxs[j] == 0 &&  j == (turn % 9))
+						continue;
+					rouxs[j] =rouxs[j] + currscore;
+					if (rouxs[j] >= 4) {
+						Score++;
+						rouxs[j] = 0;
+					}
+				}
+				turn++;
+			}
+		}
+		
+		
+		Solution = Math.max(Solution, Score);
+		
+		for(int i =0; i<9 ; i++)
+		System.out.printf("%d ", made[i]);
+		
+
+		System.out.printf(": 점수 %d ",Score );
+		System.out.println();
+	}
+	
+	
+	
+	
+	public static void dfs(int curr,int depth) {// 순서를 만들고
+		if(depth == 9) {
+
+			
+			BaseBall();
+			return;
+		}
+		if (depth == 3) {
+			visited[0] = true;
+			made[depth] = 0;
+			dfs(0,depth+1);
+			visited[0] = false;
+		}
+		else {
+			for(int i =1; i< 9; i++) {
+				if (visited[i])
+					continue;
+				
+				visited[i] = true;
+				made[depth] = i;
+				dfs(i,depth + 1);
+				visited[i] = false;
+			}	
+		}
+	}
+	public static void main(String[] args) throws IOException {
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+		N = Integer.parseInt(br.readLine());
+		info = new int[N][9];
+		made = new int[9];
+		visited = new boolean[9];
+		rouxs = new int[9];
+		
+		StringTokenizer  st;
+		for(int i =0; i < N;i++) {
+			st = new StringTokenizer(br.readLine());
+			for(int j = 0; j < 9; j++) {
+				info[i][j] = Integer.parseInt(st.nextToken());
+			}
+		}
+		dfs(1,0);
+		
+		System.out.println(Solution);
+	}
+}

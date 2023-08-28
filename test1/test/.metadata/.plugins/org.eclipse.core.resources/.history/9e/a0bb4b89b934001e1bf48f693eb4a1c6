@@ -1,0 +1,65 @@
+package com.ssafy.education.subject;
+
+public class Algo extends Subject {
+	
+	private String level; //알고리즘 레벨
+	private int time;
+	private int count;
+	private String name;
+	
+	public Algo(){}
+	
+
+	public int getTime() {
+		return time;
+	}
+
+
+	public void setTime(int time) {
+		this.time = time;
+	}
+
+
+	public int getCount() {
+		return count;
+	}
+
+
+	public void setCount(int count) {
+		this.count = count;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
+
+	public Algo(String name, int time, int count, String level){
+		this.name = name;
+		this.time = time;
+		this.count = count;
+		this.level = level;
+	}
+
+	public String getLevel() {
+		return level;
+	}
+
+	public void setLevel(String level) {
+		this.level = level;
+	}
+	
+	public String toString() {
+		StringBuilder sb=new StringBuilder();
+		sb.append(super.toString()).append("\t")
+		  .append(getLevel());
+		return sb.toString();
+	}
+
+}

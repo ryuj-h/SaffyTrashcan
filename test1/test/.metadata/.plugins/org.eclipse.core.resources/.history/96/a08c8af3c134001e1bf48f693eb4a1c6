@@ -1,0 +1,14 @@
+package com.ssafy.education.subject;
+
+import java.security.DigestException;
+
+public class check {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int a= 1/0;
+		System.out.println(a);
+		throw new ArithmeticException()
+	}
+
+}
