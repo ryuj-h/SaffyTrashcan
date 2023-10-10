@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+/**
+ * 
+ * 
+ * 
+ * @author SSAFY
+ *
+ */
+
+
+public class testprj {
+
+	static int N, int M, solution;
+	public static void dfs(int curr, int depth,int lenth) {
+		if (depth == N) {
+			
+			if (lenth == M)
+			{
+				
+			}
+			
+			return;
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+	}
+
+}

@@ -1,0 +1,14 @@
+
+
+/**
+ * 
+ * 
+ * 점화식
+ * map[i] = map[i -2] * 2 + map[i - 1] 
+ * 
+ * @author SSAFY
+ *
+ */
+public class BOJ11727_2n {
+
+}

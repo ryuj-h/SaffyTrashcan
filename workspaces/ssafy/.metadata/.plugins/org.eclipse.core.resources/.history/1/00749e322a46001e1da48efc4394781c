@@ -1,0 +1,32 @@
+import java.util.Scanner;
+
+/**
+ * 풀이방법
+ * 암만 봐도 DP같으나 점화식 구하는 방법을 모르기에
+ * dfs를 통해서 조금 구해놓고 규칙을 찾아보자
+ * 
+ * @author SSAFY
+ *
+ */
+public class BOJ9095_123plus {
+	static int N,Solution = 0;
+	
+	public static void dfs(int sum) {
+		if(sum >= N) {
+			if (sum == N) {
+				Solution++;
+			}
+			return;
+		}
+		for(int i = 1; i <= 3; i++) {
+			dfs(sum + i);
+		}
+	}
+	
+	public static void main(String args[]) {
+		Scanner sc = new Scanner(System.in);
+		N = sc.nextInt();
+		dfs(0);
+		System.out.println(Solution);
+	}
+}

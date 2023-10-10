@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\445994669.index
+\ajax_test\src
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4131362708.index
+\ajax_test\src
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\526135969.index
+\ajax_test\src
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4093047704.index
+\ajax_test\src
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2167973634.index
+\ajax_test\src
+C:\SSAFY\workspaces\ssafy\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1838310971.index
+\ajax_test\src

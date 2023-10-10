@@ -1,0 +1,14 @@
+
+
+/**
+ * 
+ * 
+ * 점화식
+ * DP[i] = DP[i -2] * 2 + DP[i - 1] 
+ * 
+ * @author SSAFY
+ *
+ */
+public class BOJ11727_2n {
+
+}

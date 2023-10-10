@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+/**
+ * 
+ * 
+ * 
+ * @author SSAFY
+ *
+ */
+
+
+public class testprj {
+
+	static int N, M, solution = 0;
+	static int arr[] = {1,1,2};//파 노 빨
+	
+	public static void dfs(int depth,int lenth) {
+		if (lenth >= M) {
+			if (lenth == M)
+			{
+				solution++;
+			}
+			return;
+		}
+		for(int i =0 ; i < 3;i++) {
+			dfs(depth + 1 , lenth + arr[i]);
+		}
+	}
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		for(;;) {
+			M = sc.nextInt();
+		
+			dfs(0,0);
+		
+			System.out.println(solution);
+		}
+	}
+
+}
