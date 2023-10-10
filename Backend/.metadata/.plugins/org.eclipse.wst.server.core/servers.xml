@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<servers>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v8.5 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v8.5 Server at localhost" name="Tomcat v8.5 Server at localhost" runtime-id="Apache Tomcat v8.5" server-type="org.eclipse.jst.server.tomcat.85" server-type-id="org.eclipse.jst.server.tomcat.85" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="1">
+    <list key="modules" value0="basic_servelet::org.eclipse.jst.jee.server:basic_servelet::jst.web::3.1"/>
+  </server>
+  <server auto-publish-setting="2" auto-publish-time="1" configuration-id="/Servers/Tomcat v9.0 Server at localhost-config" deployDir="wtpwebapps" hostname="localhost" id="Tomcat v9.0 Server at localhost" name="Tomcat v9.0 Server at localhost" runtime-id="Apache Tomcat v9.0" server-type="org.eclipse.jst.server.tomcat.90" server-type-id="org.eclipse.jst.server.tomcat.90" start-timeout="45" stop-timeout="15" testEnvironment="true" timestamp="12">
+    <list key="modules" value0="board4_cookie_seesion2::org.eclipse.jst.jee.server:board4_cookie_seesion2::jst.web::4.0" value1="cookietest::org.eclipse.jst.jee.server:cookietest::jst.web::4.0" value2="board5_el_jsp::org.eclipse.jst.jee.server:board5_el_jsp::jst.web::4.0" value3="country_jstl_el::org.eclipse.jst.jee.server:country_jstl_el::jst.web::4.0" value4="Cars_el_jsp::org.eclipse.jst.jee.server:Cars_el_jsp::jst.web::4.0" value5="test::org.eclipse.jst.jee.server:test::jst.web::4.0"/>
+  </server>
+</servers>

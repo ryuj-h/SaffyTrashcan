@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="msg">책 정보가 없습니다</div>
+    <table></table>
+    <button onclick="getBooks()">책정보 얻어오기</button>
+    <script>
+      function getBooks() {
+        fetch("http://127.0.0.1:5502/0906/ws3-3/data/data.json")
+          .then(function (response) {
+            console.log(response);
+            return response.json();
+          })
+          .then(function (data) {
+            console.log(data);
+            //데이터를 성공적으로 얻어왔을 때 <tr>태그 채워 넣기
+            let html = "";
+            for (let book of data) {
+              html += `
+                    <tr>
+                        <td>${book.title}</td>
+                        <td>${book.title}</td>
+                        <td>${book.title}</td>
+                    </tr>
+                `;
+            }
+            const table = document.querySelector("table");
+            table.innerHTML = html;
+          });
+
+          const promise = fetch("http://127.0.0.1:5502/0906/ws3-3/data/data.json");
+          promis.then(funciont(response){
+            console.log(response);
+            if (response.status == 200){
+
+            }else{
+
+            }
+          });
+      }
+    </script>
+  </body>
+</html>

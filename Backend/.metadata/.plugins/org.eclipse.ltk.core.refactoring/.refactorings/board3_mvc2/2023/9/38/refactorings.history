@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;com.ssafy.controller&apos; to &apos;country_mvc/src&apos;&#x0D;&#x0A;- Original project: &apos;board3_mvc2&apos;&#x0D;&#x0A;- Destination element: &apos;country_mvc/src&apos;&#x0D;&#x0A;- Original element: &apos;board3_mvc2/src/com.ssafy.controller&apos;" description="Copy package" destination="=country_mvc/src=/optional=/true=/=/maven.pomderived=/true=/" element1="/src=/optional=/true=/=/maven.pomderived=/true=/&lt;com.ssafy.controller" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1695098768204" version="1.0"/>
+</session>

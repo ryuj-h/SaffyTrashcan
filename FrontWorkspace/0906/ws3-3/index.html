@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SSAFY BOOK CAFE</title>
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="left_nav">
+          <div id="nav_logo">
+            <a href="">SSAFY Book Cafe</a>
+          </div>
+          <ul>
+            <li><a href="">공지사항</a></li>
+          </ul>
+        </div>
+        <div class="right_nav">
+          <ul>
+            <li><a href="">로그인</a></li>
+            <li><a href="">회원가입</a></li>
+            <li><a href="">로그아웃</a></li>
+            <li><a href="">마이페이지</a></li>
+            <li><a href="">관리자</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div class="container">
+      <aside>
+        <img src="./img/noimg.png" alt="" />
+        <img src="./img/profile.png" alt="" />
+        <div class="market" id="open" onclick="openMarket()">
+          전국매장펼치기
+        </div>
+        <div class="market" id="close" onclick="closeMarket()">
+          전국매장접기
+        </div>
+        <div class="marketAll">
+          <ul>
+            <li class="region">
+              서울
+              <ul>
+                <li>역삼점</li>
+                <li>신흥점</li>
+              </ul>
+            </li>
+
+            <li class="region">
+              대전
+              <ul>
+                <li>학하점</li>
+                <li>봉명점</li>
+              </ul>
+            </li>
+
+            <li class="region">
+              구미
+              <ul>
+                <li>안동점</li>
+                <li>공단점</li>
+              </ul>
+            </li>
+
+            <li class="region">
+              광주
+              <ul>
+                <li>하남산단점</li>
+                <li>광주역점</li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+        <button type="button" class="poll-btn">투표만들기</button>
+        <div class="choiceDiv">진행중인 투표가 없습니다.</div>
+      </aside>
+      <main>
+        <section>
+          <b>[프로그래밍 언어]</b>
+          <ul>
+            <li>
+              <img src="./img/book/p_book01.png" alt="" />
+              <div>점프 투 파이썬</div>
+              <div>(14,800원)</div>
+            </li>
+            <li>
+              <img src="./img/book/p_book02.png" alt="" />
+              <div>HTML5 API 프로그래밍</div>
+              <div>(23,000원)</div>
+            </li>
+            <li>
+              <img src="./img/book/p_book03.png" alt="" />
+              <div>백견불여일타 Vue.js 입문</div>
+              <div>(22,000원)</div>
+            </li>
+            <li>
+              <img src="./img/book/p_book04.png" alt="" />
+              <div>Java 프로그래밍</div>
+              <div>(26,500원)</div>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <b>[에세이]</b>
+          <ul>
+            <li>
+              <img src="./img/book/e_book01.png" alt="" />
+              <div>2인조</div>
+              <div>(14,800원)</div>
+            </li>
+            <li>
+              <img src="./img/book/e_book02.png" alt="" />
+              <div>안녕, 소중한 사람</div>
+              <div>(15,000원)</div>
+            </li>
+            <li>
+              <img src="./img/book/e_book03.png" alt="" />
+              <div>꽃을 보듯 너를 본다</div>
+              <div>(10,000원)</div>
+            </li>
+            <li>
+              <img src="./img/book/e_book04.png" alt="" />
+              <div>곰돌이 푸, 행복한 일은 매일 있어</div>
+              <div>(12,000원)</div>
+            </li>
+          </ul>
+        </section>
+        <div class="post">
+          <section>
+            <b>[인기글]</b>
+            <table id="popular">
+              <tr>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+              </tr>
+              <tr>
+                <td>자바공부 쉽게 하는 법!</td>
+                <td>이쎄림</td>
+                <td>1756</td>
+              </tr>
+              <tr>
+                <td>알고리즘은 자바? 파이썬?</td>
+                <td>홍정민</td>
+                <td>998</td>
+              </tr>
+              <tr>
+                <td>스프링 정복하기~</td>
+                <td>김나현</td>
+                <td>856</td>
+              </tr>
+            </table>
+          </section>
+          <section>
+            <b>[최신글]</b>
+            <table id="recently">
+              <tr>
+                <th>제목</th>
+                <th>작성자</th>
+                <th>조회수</th>
+              </tr>
+              <tr>
+                <td>web 관련 질문있어요.</td>
+                <td>이주녕</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>vue.js는 이렇게 공부해보세요</td>
+                <td>조밍기</td>
+                <td>96</td>
+              </tr>
+              <tr>
+                <td>꽃길만 걸어요.</td>
+                <td>류혜연</td>
+                <td>56</td>
+              </tr>
+            </table>
+          </section>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <ul>
+        <li>카페소개</li>
+        <li>개인정보처리방침</li>
+        <li>이용약관</li>
+        <li>오시는길</li>
+        <li>© SAFFY Corp.</li>
+      </ul>
+    </footer>
+    <script src="js/index.js"></script>
+  </body>
+</html>

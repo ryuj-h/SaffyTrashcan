@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="board4_cookie_seesion2"/>
+			<item value="country_mvc"/>
+			<item value="board3_mvc2"/>
+			<item value="EnjoyTrip_Java_deajeon_team8"/>
+			<item value="board_jdbc"/>
+			<item value="jdbctest"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="board4_cookie_seesion2"/>
+			<item value="country_mvc"/>
+			<item value="board3_mvc2"/>
+			<item value="EnjoyTrip_Java_deajeon_team8"/>
+			<item value="board_jdbc"/>
+			<item value="jdbctest"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item key="width" value="480"/>
+		<item key="height" value="531"/>
+		<item key="x" value="720"/>
+		<item key="y" value="166"/>
+	</section>
+</section>

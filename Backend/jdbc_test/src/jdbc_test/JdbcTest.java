@@ -1,0 +1,56 @@
+package jdbc_test;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.util.*;
+import java.sql.*;
+
+/**
+ * 
+ * 1. Driver 클래스 로딩
+ * 2. Connection 얻어오기
+ * 3. sql 작성
+ * 4. 쿼리문 보내기(실행) (select 절의 경우)
+ * 5. 조회 결과를 원하는 형태로 가공
+ * 
+ * 
+ * 
+ * 
+ * @author SSAFY
+ *
+ */
+public class JdbcTest {
+	public static void main(String args[]) throws ClassNotFoundException, SQLException {
+		//1. Driver 클래스 로딩
+		Class.forName("com.mysql.cj.jdbc.Driver");
+		
+		//2. Connection 얻어오기
+		String url = "jdbc:mysql://127.0.0.1:3306/world";
+		String user =  "ssafy";
+		String password = "ssafy";
+		Connection conn = DriverManager.getConnection(url,user,password);
+		
+		//3. sql 작성
+		String sql = "select * from country";
+		
+		//4. 쿼리문 보내기
+		PreparedStatement pstmt = conn.prepareStatement(sql);
+		ResultSet rs =pstmt.executeQuery();
+		
+		System.out.println(rs);
+		List<Country> countries = new ArrayList<>();
+		boolean isIndata = rs.next();
+		if(isIndata) {
+			String code = rs.getString(1);
+			String name = rs.getString(2);
+			String continent = rs.getString(3);
+			double gnp = rs.getDouble("gnp");
+			System.out.printf("%s %s %s %f\n", code ,name, continent, gnp);
+			
+			Country cty = new Country(code,name,continent,gnp);
+		}
+	
+	}
+}
